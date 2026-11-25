@@ -1,20 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Projeto</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Club Corinthians Paulista - O Time do Povo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main class="container">
-    <h1>Olá, Mundo!</h1>
-    <p>Seu projeto começou com os arquivos separados.</p>
-    <button id="btn-acao">Clique aqui</button>
-    <p id="mensagem"></p>
-  </main>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SCCP <span>1910</span></div>
+            <ul class="nav-links">
+                <li><a href="#historia">História</a></li>
+                <li><a href="#titulos">Títulos</a></li>
+                <li><a href="#idolos">Ídolos</a></li>
+                <li><a href="#hino">Hino</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>SPORT CLUB CORINTHIANS PAULISTA</h1>
+            <p>O Time do Povo • Desde 1º de Setembro de 1910</p>
+            <button id="btn-grito" class="btn-primary">Soltar o Grito da Fiel!</button>
+            <p id="mensagem-fiel" class="oculto"></p>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
+    <main>
+        <section id="historia" class="container">
+            <h2>Nossa História</h2>
+            <p>Fundado em 1º de setembro de 1910 por um grupo de operários do bairro do Bom Retiro, em São Paulo, o Corinthians nasceu para ser o clube do povo, quebrando a barreira elitista do futebol da época.</p>
+            <p>Conhecido pela raça em campo e pela paixão incondicional da Fiel Torcida, o Timão protagonizou momentos históricos como a Invasão Corintiana (1976), a Democracia Corinthiana (anos 80) e a conquista invicta da Libertadores seguida do Mundial de Clubes em 2012.</p>
+        </section>
+
+        <section id="titulos" class="bg-dark">
+            <div class="container">
+                <h2>Principais Conquistas</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>2x Mundial de Clubes</h3>
+                        <p>2000 e 2012</p>
+                    </div>
+                    <div class="card">
+                        <h3>1x Copa Libertadores</h3>
+                        <p>2012 (Invicto)</p>
+                    </div>
+                    <div class="card">
+                        <h3>7x Campeonato Brasileiro</h3>
+                        <p>1990, 1998, 1999, 2005, 2011, 2015, 2017</p>
+                    </div>
+                    <div class="card">
+                        <h3>3x Copa do Brasil</h3>
+                        <p>1995, 2002, 2009</p>
+                    </div>
+                    <div class="card">
+                        <h3>30x Campeonato Paulista</h3>
+                        <p>Maior campeão estadual</p>
+                    </div>
+                    <div class="card">
+                        <h3>1x Recopa Sul-Americana</h3>
+                        <p>2013</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="idolos" class="container">
+            <h2>Ídolos Eternos</h2>
+            <div class="cards-grid">
+                <div class="card-light">
+                    <h3>Sócrates</h3>
+                    <p>O Doutor, símbolo maior da Democracia Corinthiana e genialidade pura no meio-campo.</p>
+                </div>
+                <div class="card-light">
+                    <h3>Cássio</h3>
+                    <p>O Gigante, maior vencedor da história do clube com 9 títulos e defesas históricas em 2012.</p>
+                </div>
+                <div class="card-light">
+                    <h3>Marcelinho Carioca</h3>
+                    <p>O Pé de Anjo, mestre das bolas paradas e um dos maiores artilheiros do Timão.</p>
+                </div>
+                <div class="card-light">
+                    <h3>Rivelino</h3>
+                    <p>O Reizinho do Parque, dono de uma das canhotas mais potentes da história do futebol.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hino" class="bg-dark">
+            <div class="container center">
+                <h2>Hino Oficial</h2>
+                <button id="btn-hino" class="btn-secondary">Mostrar Letra do Hino</button>
+                <div id="letra-hino" class="hino-box oculto">
+                    <p>Salve o Corinthians,<br>
+                    O campeão dos campeões,<br>
+                    Eternamente<br>
+                    Dentro dos nossos corações.</p>
+                    <p>Salve o Corinthians<br>
+                    De tradições e glórias mil;<br>
+                    Tu és orgulho<br>
+                    Dos desportistas do Brasil.</p>
+                    <p>Teu passado é uma bandeira,<br>
+                    Teu presente é uma lição;<br>
+                    Figuras entre os primeiros<br>
+                    Do nosso esporte bretão.</p>
+                    <p>Corinthians grande,<br>
+                    Sempre altaneiro,<br>
+                    És do Brasil<br>
+                    O clube mais brasileiro!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Vai, Corinthians! • Projeto desenvolvido para GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
